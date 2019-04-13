@@ -1,0 +1,258 @@
+<html>
+<head>
+<script type="text/javaScript">
+confirm("宝宝，欢迎你再次来到爱情小屋~");
+document.write("爱情小屋网");
+</script>
+<meta charset="utf-8">
+<title>I LOVE YOU</title>
+<style type="text/css">
+html{
+background-color:pink;
+height:100%;
+width:100%;}
+a{
+color:camel
+}
+div>h3{
+	color:maroon;
+}
+div>h4{
+	color:purple;
+}
+div>h5{
+	color:cyna;
+}
+div>h6{
+	color:green;
+}
+ul{
+color:green;
+}
+form{
+color:red;
+}
+div>p{
+color:brown;
+}
+#tab{	
+overflow:hidden;
+width:150px; 
+height:160px;
+position:relative; 
+float:right;
+}
+#tab>img{
+width:50px;
+height:50px;
+}
+
+
+
+#a{
+width: 500px;
+height:80px;
+position: absolute;
+left: 500px;
+top: 215px;
+padding-top: 100px;
+background-color: pink;
+border: 1px black solid ;
+text-align: center;
+}
+#no{
+position: absolute;
+left: 100px;
+top: 100px;
+}
+</style>
+<script>
+    window.onload = function(){
+        var images = document.getElementsByTagName('img');
+        var pos = 0;
+        var len = images.length;
+        setInterval(function(){
+            images[pos].style.display = 'none';
+            pos = ++pos == len ? 0 : pos;
+            images[pos].style.display = 'inline';
+        },3000);
+    };
+</script>
+
+</head>
+<div>
+<body onresize="tellSize()">
+
+<div id="a" clas="a" style="color: red;">
+   	 <span>DO you want to marry with  me?</span><br />
+     <button onclick="b()">yes</button>  <br />
+     <button onmouseover="a()" id="no">no</button>
+</div>
+
+<script>
+   function a(){
+   var no = document.getElementById("no");
+   no.style.left = Math.floor(Math.random()*450)+"px";
+   no.style.top = Math.floor(Math.random()*280)+"px";
+}
+   function b(){
+   alert("老婆么么哒~哈哈")
+}
+</script>
+
+
+<div id="tab">
+    <img src="1.jpg"/>
+	<img src="2.jpg"/>
+	<img src="3.jpg"/>
+	<img src="4.jpg"/>
+	<img src="5.jpg"/>
+</div>
+
+<table>
+<ul>
+钟爱三句箴言：
+<ol>
+<li><button onclick="three('烟花再绚烂，也抵不过你的一句甜言蜜语')">悄悄地告诉你第一句</li><br/>
+<li><button onclick="three('我知道上帝还是眷顾我的，因为我相信你是我生命中的馈赠')">悄悄地告诉你第二句</li><br/>
+<li><button onclick="three('爱你，想你，恋你，念你，永不停息！')">悄悄地告诉你第三句</li><br/>
+</ol>
+</ul>
+</table>
+
+<hr/>
+<br/>
+<button onclick="play(this)">石头</button>
+<button onclick="play(this)">剪刀</button>
+<button onclick="play(this)">布</button>
+<br/>
+<p id="msg">猜拳游戏<p/>
+
+<a>猜数字小游戏：<a><button onclick="youxi()">开始游戏</button><p/>
+<a href="index1.html"><button>2048小游戏</button></a>
+<a href="index2.html"><button>别踩粉块儿</button></a>
+<a href="index3.html"><button>媳妇养的喵</button></a>
+<a href="index4.html"><button>媳妇家的象</button></a>
+<script type="text/javaScript">
+function play(btn){
+	var msg = document.getElementById("msg");
+	var playerChoice = btn.innerHTML;
+	var num = parseInt(Math.random()*3);
+	var aiChoice;
+	if(num==0){
+		aiChoice="石头";
+	}else if(num==1){
+		aiChoice="剪刀";
+	}else{
+		aiChoice="布";
+	}
+	
+	if((playerChoice=="石头" && aiChoice=="剪刀") || (playerChoice=="剪刀" && aiChoice=="布") || (playerChoice=="布" && aiChoice=="石头")){
+		msg.innerHTML = "你出的是："+playerChoice+" ，电脑出的是："+aiChoice+" ，恭喜你赢了！";
+	}else if((aiChoice=="石头" && playerChoice=="剪刀") || (aiChoice=="剪刀" && playerChoice=="布") || (aiChoice=="布" && playerChoice=="石头")){
+		msg.innerHTML = "你出的是："+playerChoice+" ，电脑出的是："+aiChoice+" ，你输了！";
+	}else{
+		msg.innerHTML = "你出的是："+playerChoice+" ，电脑出的是："+aiChoice+" ，平局！";
+	}
+	
+}
+
+function three(name){
+	alert("你老公说："+name+"!");
+}
+
+var i = 1;
+function tellSize(){
+if(i==3 || i==6 || i==12){
+alert("你也太无聊了...");
+}else{
+alert("你调整了页面大小，这是第"+i+"次");
+}
+i++;
+}
+</script>
+
+<script type="text/JavaScript">
+function youxi(){
+ var x;
+ x=parseInt(Math.random()*(1000-1))+1;
+ for(var i=0;i<10;i++){
+ var num=prompt("请输入(0~1000)你猜测的任意数字","");
+ if (num!=null && num!=""){
+ if(num==x){
+  switch(i){
+  case 0:
+   alert('真神啦,恭喜你猜对啦!快去买彩票');
+   i=10;
+   break;
+  case 1:
+   alert('厉害,恭喜你猜对啦!幸运日');
+   i=10;
+   break;
+  case 2:
+   alert('真棒,恭喜你猜对啦!出众的一天');
+   i=10;
+   break;
+  case 3:
+   alert('不错,对啦!祝你开心');
+   i=10;
+   break;
+  case 4:
+   alert('不容易,猜对啦!');
+   i=10;
+   break;
+  case 5:
+   alert('还算将就啦,猜对了!');
+   i=10;
+   break;
+  case 6:
+   alert('有点慢呦,猜对啦!');
+   i=10;
+   break;
+  case 7:
+   alert('下次再快点,猜对啦!');
+   i=10;
+   break;
+  case 8:
+   alert('还好赶上了,对啦!小幸运');
+   i=10;
+   break;
+  case 9:
+   alert('最后机会,终于对啦!继续努力');
+   i=10;
+   break;
+  }
+ }
+ if(i==9){
+  alert('笨蛋，10次都猜不对！');
+ }
+ if(num>x){
+  document.write("您已经猜了" + eval(i+1) + "次," + num +"," + "大了！<br>");
+ }
+ if(num<x){
+  document.write("您已经猜了" + eval(i+1) + "次," + num +"," + "小了！<br>");
+ }
+  }else{
+ alert('是否退出游戏？'); 
+ break;
+ }
+ }
+ }
+</script>
+
+<hr/>
+<h6>我要的爱情，一个你，一颗心，一心一意，一辈子。只是这样，再无其他</h6>
+<h5>对于世界而言，你是一个人；但是对于我，你是我的整个世界</h5>
+<h4>纵有弱水三千，阡陌繁花，怎敌你转身回眸，拈花一笑</h4>
+<h3>你的一生我只借一程，这一程便是余生</h3>
+<h4>你在的时候，你就是全世界，你不在的时候，全世界都是你</h4>
+<h5>你陪着我的时候，我从没羡慕过任何人</h5>
+<h6>遇见你之前，我没想过结婚。遇见你之后，我没想过别人</h6>
+<hr/>
+
+<\(^o^)/~><br/>
+<a href="index.html"><button>爱情时光轴</button></a>
+<h6>注:本网站为XXX专属网站!</h6>
+</body>
+</div>
+</html>
