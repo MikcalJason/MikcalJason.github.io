@@ -1,0 +1,4 @@
+#trainTicket{ }
+#trainTicket>div{ clear:both;padding:10px; }
+#trainTicket>div>div{ float:left;padding:10px; }
+#trainTicket>div>div>img{width:160px;height:120px;box-shadow: 10px 10px 5px #888888;border:0px solid #FFF;border-radius:10px;-moz-border-radius:25px; /* Old Firefox */}

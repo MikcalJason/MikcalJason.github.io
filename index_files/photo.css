@@ -1,1 +1,3 @@
-#letters div{ float:left; margin:10px;width:20%;border:6px solid #FFF;border-radius:3px;}
+#photoCollection{ width:100%;height:100%; }
+#photoCollection>div{ width:100%;height:120px;margin-top:10px;}
+#photoCollection>div>img{ width:20%;}
