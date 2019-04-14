@@ -59,14 +59,14 @@ function timeElapse(date){
 	$("#clock").html(result);
 }
 	 
-function fitImage(maxW,maxH,containSize){
+function fitImage(maxW,maxH,containerSize){
 	var scaleSize = [0,0];
-		if(maxW/maxH>contianerSize[0]/contianerSize[1]){
-			scaleSize[0] = contianerSize[0];
-			scaleSize[1] = maxH*(contianerSize[0]/maxW);
+		if(maxW/maxH>containerSize[0]/containerSize[1]){
+			scaleSize[0] = containerSize[0];
+			scaleSize[1] = maxH*(containerSize[0]/maxW);
 		}else{
-			scaleSize[0] = maxW*(contianerSize[1]/maxH);
-			scaleSize[1] = contianerSize[1];
+			scaleSize[0] = maxW*(containerSize[1]/maxH);
+			scaleSize[1] = containerSize[1];
 			}
 	return scaleSize;
 }

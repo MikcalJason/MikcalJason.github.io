@@ -1,3 +1,4 @@
 #photoCollection{ width:100%;height:100%; }
 #photoCollection>div{ width:100%;height:120px;margin-top:10px;}
-#photoCollection>div>div>img{ height:120px;}
+#photoCollection>div>div{ height:120px;}
+#photoCollection>div>div>img{ box-shadow: 5px 5px 3px #888888;border:0px solid #FFF;border-radius:10px;-moz-border-radius:10px;}

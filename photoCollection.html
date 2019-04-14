@@ -6,6 +6,8 @@
 	</title>
 	        <link type="text/css" rel="stylesheet" href="./index_files/default.css">
 			<link type="text/css" rel="stylesheet" href="./index_files/photo.css">
+			<script type="text/javascript" src="./index_files/jquery.min.js"></script>
+			<script type="text/javascript" src="./index_files/functions.js" charset="utf-8"></script>
 </head>
 <body>
 <div id="main">
@@ -24,4 +26,17 @@
 		</div>
 	</div>
 </body>
+<script>
+	$(function(){
+		var containerSize = [160,120];
+		var $photos = $("#photoCollection>div>img");
+		for(var i=0;i<$photos.length;i++){
+			var maxW =$photos[i].width;
+			var maxH =$photos[i].height;
+			var size = fitImage(maxW,maxH,containerSize);
+			$($photos[i]).attr("width",size[0]).attr("height",size[1]);
+		}
+	})
+	
+</script>
 </html>
