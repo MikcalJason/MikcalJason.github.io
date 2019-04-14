@@ -5,37 +5,42 @@
 		王小莹的照片集
 	</title>
 	        <link type="text/css" rel="stylesheet" href="./index_files/default.css">
+			<link type="text/css" rel="stylesheet" href="./index_files/style.css">
 			<link type="text/css" rel="stylesheet" href="./index_files/photo.css">
 			<script type="text/javascript" src="./index_files/jquery.min.js"></script>
 			<script type="text/javascript" src="./index_files/functions.js" charset="utf-8"></script>
 </head>
 <body>
 <div id="main">
+  <div style="margin:20px;">
+	<a class="button back" href="./index.html">返回</a>
+  </div>
+	<h1> &nbsp;王小莹的照片集 </h1>
 	<div id="photoCollection">
 		<div>
+			<img src="./index_files/img/photos/8.jpg"></img>		
 			<img src="./index_files/img/photos/1.jpg"></img>
-		</div>
-		<div>
-			<img src="./index_files/img/photos/2.jpg"></img>
-		</div>
-		<div>
 			<img src="./index_files/img/photos/3.jpg"></img>
-		</div>
-		<div>
+			<img src="./index_files/img/photos/2.jpg"></img>
 			<img src="./index_files/img/photos/4.jpg"></img>
+			<img src="./index_files/img/photos/5.jpg"></img>
+			<img src="./index_files/img/photos/6.jpg"></img>
+			<img src="./index_files/img/photos/7.jpg"></img>
+			<img src="./index_files/img/photos/9.jpg"></img>
+			<img src="./index_files/img/photos/10.jpg"></img>
 		</div>
 	</div>
 </body>
 <script>
 	$(function(){
-		var containerSize = [160,120];
-		var $photos = $("#photoCollection>div>img");
-		for(var i=0;i<$photos.length;i++){
-			var maxW =$photos[i].width;
-			var maxH =$photos[i].height;
-			var size = fitImage(maxW,maxH,containerSize);
-			$($photos[i]).attr("width",size[0]).attr("height",size[1]);
-		}
+		//var containerSize = [200,160];
+		//var $photos = $("#photoCollection>div>img");
+		//for(var i=0;i<$photos.length;i++){
+		//	var maxW =$photos[i].width;
+		//	var maxH =$photos[i].height;
+		//	var size = fitImage(maxW,maxH,containerSize);
+		//	$($photos[i]).attr("width",size[0]).attr("height",size[1]);
+		//}
 	})
 	
 </script>
