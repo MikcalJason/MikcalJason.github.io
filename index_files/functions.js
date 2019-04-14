@@ -58,3 +58,15 @@ function timeElapse(date){
 	var result = "第 <span class=\"digit\">" + days + "</span> 天 <span class=\"digit\">" + hours + "</span> 小时 <span class=\"digit\">" + minutes + "</span> 分钟 <span class=\"digit\">" + seconds + "</span> 秒"; 
 	$("#clock").html(result);
 }
+	 
+function fitImage(maxW,maxH,containSize){
+	var scaleSize = [0,0];
+		if(maxW/maxH>contianerSize[0]/contianerSize[1]){
+			scaleSize[0] = contianerSize[0];
+			scaleSize[1] = maxH*(contianerSize[0]/maxW);
+		}else{
+			scaleSize[0] = maxW*(contianerSize[1]/maxH);
+			scaleSize[1] = contianerSize[1];
+			}
+	return scaleSize;
+}

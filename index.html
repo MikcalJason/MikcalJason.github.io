@@ -98,24 +98,7 @@
     <script>
 	 var contianerSize =[150,150];
 	 
-	 //function resize(maxW,maxH){
-	 //	var scaleSize = [0,0];
-	 //	if(maxW/maxH>contianerSize[0]/contianerSize[1]){
-	 //		scaleSize[0] = contianerSize[0];
-	 //		scaleSize[1] = maxH*(contianerSize[0]/maxW);
-	 //	}else{
-	 //		scaleSize[0] = maxW*(contianerSize[1]/maxH);
-	 //		scaleSize[1] = contianerSize[1];
-	 //	}
-	 //	return scaleSize;
-	 //}
-	 
     (function(){
-		//var $photo = $('#photo img');
-		//var size =[];
-	    //size = resize($photo.width,$photo.height);
-		//$photo.attr('width',size[0]).attr('height',size[1]);
-		
         var canvas = $('#canvas');
         if (!canvas[0].getContext) {
             $("#error").show();
