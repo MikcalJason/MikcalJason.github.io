@@ -1,5 +1,5 @@
 #trainTicket{ }
-#trainTicket>div{ clear:both;height:140px; width:42%;}
-#trainTicket>div>div{float:left;padding:10px;}
+#trainTicket>div{ clear:both;height:140px; }
+#trainTicket>div>div{float:left;padding:10px;width:42%;}
 #trainTicket>div>div>img{width:160px;height:120px;box-shadow: 5px 5px 3px #888888;border:0px solid #FFF;border-radius:10px;-moz-border-radius:10px; /* Old Firefox */}
 #trainTicket>div>div>p{}
