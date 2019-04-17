@@ -7,6 +7,7 @@
 	        <link type="text/css" rel="stylesheet" href="./index_files/default.css">
 			<link type="text/css" rel="stylesheet" href="./index_files/style.css">
 			<link type="text/css" rel="stylesheet" href="./index_files/message.css">
+			<script type="text/javascript" src="./index_files/message.js"></script>
 			<meta name="viewport" content="width=device-width">
 			<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 </head>
@@ -16,8 +17,20 @@
 	<div id="messageBoard">
 		<div class="panel">
 			<div class="panel-head">王小莹对周小全说：</div>
-			<div class="panel-body"><p>今天考了78分</p></div>
-			<div class="panel-foot"><div style="float:right"><span>2019年4月14</span><button>删除</button></div></div>
+			<div class="panel-body"><p>&nbsp;&nbsp;今天考了78分</p></div>
+			<div class="panel-foot">
+				<div class="timeStamp" style="float:right"> 2019-4-17 21:17 </div>
+			</div>
+		</div>
+	</div>
+	<div id="edit">
+		<textarea id="txtarea" rows="4" cols="50">
+			
+		</textarea>
+		<div style="text-align:center;">
+			<button id="toXY" style="width:160px;height:30px;">小莹想对小全说</button>
+			&nbsp;&nbsp;&nbsp;&nbsp;
+			<button id="toXQ" style="width:160px;height:30px;">小全想对小莹说</button>
 		</div>
 	</div>
 </div>
