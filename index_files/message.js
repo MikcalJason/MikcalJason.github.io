@@ -5,7 +5,7 @@ var tmpl = {
 		return str;
 	},
 	body:function(content){
-		var strContent ="<div class='panel-body'><p>&nbsp;&nbps;"+content;
+		var strContent ="<div class='panel-body'><p>&nbsp;&nbps;&nbsp;&nbsp;"+content;
 		strContent+="</p></div>";
 		return strContent;
 	},
